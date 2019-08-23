@@ -98,8 +98,8 @@ $(window).on('load', function() {
         // Fullpage model.html
         if (typeof $.fn.fullpage == 'function') {
             $('#fullpage').fullpage({
-
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
+                lockAnchors: false,
+                anchors: ['Home', 'Whyus', 'OurServices', 'FreeValuation', 'CaseStudies', 'OurTeam', 'ContactUs'],
                 menu: '#bs-example-navbar-collapse-1',
 
                 easingcss3: 'ease',

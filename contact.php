@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $postcode = $_POST['postcode'];
 
 
-    $mailTo = 'info@hightopproperty.com';
+    $mailTo = 'mazam8414@gmail.com';
     $headers = 'From: '.$email;
     $body ='Name: '.$name. ".\n\n" .'Email: '.$email. "\n\n" .'Phone: '.$phone. "\n\n" .'Post Code: '.$postcode  ;
 
@@ -23,7 +23,7 @@ if(isset($_POST['submit1'])){
     $msg = $_POST['msg'];
 
 
-    $mailTo = 'info@hightopproperty.com';
+    $mailTo = 'mazam8414@gmail.com';
     $headers = 'From: '.$email;
     $body ='Name: '.$name. ".\n\n" .'Email: '.$email. "\n\n" .'Message : '.$msg;
 

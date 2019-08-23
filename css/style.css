@@ -197,6 +197,17 @@ section {
   border-bottom: 2px solid #D5B026;
   border-radius: 0;
   font-size: 14px;
+  color: #000;
+}
+
+
+.form-b .form-control {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #D5B026;
+  border-radius: 0;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -272,11 +283,10 @@ nav.vertical-left {
   border-radius: 0;
   border: none;
   position: fixed;
-  top: 50%;
+  top: 5.4%;
   transform: translateY(-50%);
-  left: 50px;
-  right: initial;
-  display: none;
+  right: 200px !important;
+  display: block;
 }
 
 nav.vertical-left .navbar-collapse {
@@ -284,34 +294,29 @@ nav.vertical-left .navbar-collapse {
 }
 
 nav.vertical-left ul.navbar-nav li {
-  display: block;
+  display: inline-block;
   float: none !important;
   position: relative;
   /* transform: rotate(270deg); */
   margin-bottom: 1rem;
 
 }
-
-nav.vertical-left ul.navbar-nav li::after {
-  content: "";
-  background: #666;
-  height: 5px;
-  width: 2px;
-  position: absolute;
-  left: -2px;
-  bottom: -2px;
-  border-radius: 50%;
+.navbar-nav {
+  float: right;
+  margin: 0;
 }
+
 
 nav.vertical-left ul.navbar-nav li:last-child::after {
   content: none;
 }
 
 nav.vertical-left ul.navbar-nav li a {
-  color: #000;
-  padding: 15px 25px;
+  color: #fff;
+  padding: 15px 20px;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 nav.vertical-left ul.navbar-nav li a:hover,
@@ -323,17 +328,6 @@ nav.vertical-left ul.navbar-nav li a:focus {
 nav.vertical-left ul.navbar-nav li.active {
   position: relative;
 
-}
-
-nav.vertical-left ul.navbar-nav li.active::before {
-  content: "";
-  background: #D5B026;
-  width: 2px;
-  height: 20px;
-  position: absolute;
-  left: -1px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 nav.vertical-left ul.navbar-nav li.active a {
@@ -1597,7 +1591,23 @@ textarea {
  CSS for width 1260px
 ==================================================*/
 @media only screen and (max-width : 1740px) {
-
+  nav.vertical-left {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    position: fixed;
+    top: 5%;
+    transform: translateY(-50%);
+    right: 100px !important;
+    display: block;
+  }
+  nav.vertical-left ul.navbar-nav li a {
+    color: #fff;
+    padding: 15px 15px;
+    font-weight: 400;
+    font-size: 14px;
+}
+  
   .fixed-top {
     color: #fff;
     position: fixed;
@@ -2465,6 +2475,9 @@ textarea {
   .top-icon{
     position: absolute;
    display: none;
+  }
+  nav.vertical-left {
+    right: 0 !important;
   }
 }
 
